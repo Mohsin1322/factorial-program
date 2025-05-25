@@ -1,8 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int number = 5;
+    int number;
     int factorial = 1;
+    
+    printf("Enter a number to calculate its factorial: ");
+    scanf("%d", &number);
+    
+    if (number < 0) {
+        printf("Error: Cannot calculate factorial of negative numbers!\n");
+        return 1;
+    }
     
     printf("Calculating factorial of %d\n", number);
     
